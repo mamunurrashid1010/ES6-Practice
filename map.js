@@ -47,3 +47,22 @@ age.forEach(function (value,key) {
 });
 
 
+// Map.entries(), The entries() method returns an iterator object with the [key,values] in a Map
+document.write("<br>Map entries print:<br>");
+for (let x of age.entries()){
+    document.write(x+"<br>");
+}
+
+
+// Map.keys(), The keys() method returns an iterator object with the keys in a Map:
+document.write("<br>Map key print:<br>");
+for (let x of age.keys()){
+    document.write(x+"<br>");
+}
+
+
+// Map.values(), The values() method returns an iterator object with the values in a Map:
+document.write("<br>Map value print:<br>");
+for (let x of age.values()){
+    document.write(x+"<br>");
+}
