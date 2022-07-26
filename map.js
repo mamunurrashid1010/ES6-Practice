@@ -32,3 +32,18 @@ typeof fruits;
 fruits instanceof Map;
 
 document.getElementById('demo').innerText="Orange price: "+orangePrice;
+
+
+// map create and print example
+const age=new Map();
+age.set("kamal",32);
+age.set('noman',25);
+age.set('turjoy',33);
+
+document.write("<br>Map print value:<br>");
+// Map.forEach(), The forEach() method invokes a callback for each key/value pair in a Map
+age.forEach(function (value,key) {
+   document.write("Name: "+key +" Age: "+ value+"<br>");
+});
+
+
