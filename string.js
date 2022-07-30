@@ -24,3 +24,15 @@ if(result1==true){
 else {
     document.write("<br>False");
 }
+
+
+// 3. string.endsWith()
+// The endsWith() method returns true if a string ends with a specified value, otherwise false
+var name= "John Doe";
+let r=name.endsWith("Doe");
+if(r==true){
+    document.write("<br>True");
+}
+else {
+    document.write("<br>False");
+}
