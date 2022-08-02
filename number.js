@@ -27,3 +27,13 @@ if (safeInteger==true)
     document.write('<br>Safe Integer');
 else
     document.write('Not Safe Integer');
+
+
+// isFinite() Method
+// The global isFinite() method returns false if the argument is Infinity or NaN. Otherwise it returns true.
+var finiteNumber=isFinite(10/0); //return false
+    finiteNumber=isFinite(10/1); //return true
+
+// isNaN() Method
+// The global isNaN() method returns true if the argument is NaN. Otherwise it returns false
+var checkNull=isNaN("hello"); //return true
