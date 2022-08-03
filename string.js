@@ -33,6 +33,6 @@ let r=name.endsWith("Doe");
 if(r==true){
     document.write("<br>True");
 }
-else {
+else    {
     document.write("<br>False");
 }
