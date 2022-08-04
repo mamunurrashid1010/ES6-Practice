@@ -7,6 +7,7 @@
 <p>The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:</p>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
     function sum(...args) {
@@ -17,9 +18,19 @@
         return sum;
     }
 
+    function mul(...args){
+        var multiplication=1;
+        for (let arg of args){
+            multiplication*=arg;
+        }
+        return multiplication;
+    }
+
 let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
+let y=mul(1,2,3,4,5);
 
 document.getElementById("demo").innerHTML = "sum: "+x;
+document.getElementById("demo1").innerHTML = "Multiplication: "+y;
 </script>
 
 </body>
